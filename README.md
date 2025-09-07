@@ -33,7 +33,7 @@ To keep the process organized, each feature or milestone is developed in its **o
 ### 🔀 Build process
 
 - Every branch represents a step of the roadmap. focusing only on that specific milestone
-  Example: `feature/step-01-navbar`, `feature/step-02-about`.
+  Example: `feat/step-01-navbar`, `fix/step-02-about`.
 - Once completed, the branch is merged into `main`.
 - Progress is tracked in this README using checkboxes (`- [ ]` → `- [x]`).
 
