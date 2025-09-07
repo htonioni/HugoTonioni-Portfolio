@@ -1,105 +1,124 @@
-# 🌐 Personal Portfolio - Showcase
+# Personal Portfolio - Showcase
 
-This is the repository for my personal portfolio, built with **Next.js (React + TypeScript)**, styled using **Tailwind CSS**, and leveraging modern UI libraries for a polished interface.  
-The goal is to create a **professional and interactive website** to showcase my projects, resume, and contact information, reflecting organization, clarity, and attention to detail.
+This repository contains the source code for my personal portfolio website, built with **Next.js (React + TypeScript)** and styled using **Tailwind CSS**.
+The goal of this project is to create a **professional and interactive platform** to highlight my work, present my resume, and provide simple ways to get in touch.
 
 ---
 
-## 🚀 Project Goals
+## 🎯 Project Goals
 
-- Build a professional digital presence
-- Showcase my main projects in a clear and attractive way
-- Make my resume easily accessible
-- Provide simple and intuitive contact options
-- Demonstrate proficiency with modern tools (React, Next.js, Tailwind, UI Libraries)
+- Establish a strong digital presence.
+- Showcase projects in a clear and visually appealing way.
+- Make my resume easily accessible online.
+- Provide simple and intuitive contact options.
+- Demonstrate proficiency with modern tools (React, Next.js, Tailwind, UI Libraries).
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Next.js** → React framework for structure, routing, and optimizations
-- **React + TypeScript** → Development base
-- **Tailwind CSS** → Fast and responsive styling
-- **Aceternity UI** → Modern UI components ([Sidefolio Template](https://pro.aceternity.com/products/sidefolio-portfolio-template))
-- **Vercel** → Deployment and hosting
+- **Next.js** → Framework for React applications, routing, and optimizations.
+- **React + TypeScript** → Development foundation.
+- **Tailwind CSS** → Utility-first CSS framework for fast and responsive styling.
+- **Aceternity UI** → Modern UI components for a polished interface.
+- **Vercel** → Deployment and hosting platform.
 
 ---
 
-## 🧑‍💻 Step-by-Step build process
+## 💻📈 Development Roadmap
 
-### 1. Project Foundation
-- [x] Create GitHub repository
-- [x] Initialize project with Next.js + TypeScript
-- [x] Configure Tailwind CSS and theme
-- [ ] Set up ESLint/Prettier for code consistency
-- [ ] Add favicon and basic metadata
+This portfolio is being built in **phases**, with progress tracked through checklists.
+To keep the process organized, each feature or milestone is developed in its **own branch**.
 
-### 2. Base Layout & Structure
-- [ ] Create the main layout component (`layout.tsx`)
-- [ ] Set up global styles and font imports
-- [ ] Implement the responsive container for content
+### 🔀 Build process
 
-### 3. Navigation
-- [ ] Build the Side Menu (sidebar navigation)
-  - [ ] Add navigation links (Home, Projects, Resume, Contact)
-  - [ ] Make it responsive (collapsible on mobile)
-- [ ] Add a topbar (for mobile or branding)
+- Every branch represents a step of the roadmap. focusing only on that specific milestone
+  Example: `feature/step-01-navbar`, `feature/step-02-about`.
+- Once completed, the branch is merged into `main`.
+- Progress is tracked in this README using checkboxes (`- [ ]` → `- [x]`).
 
-### 4. Hero Section
-- [ ] Create the Hero component (main introduction)
-  - [ ] Add name, title, and a short description
-  - [ ] Include a profile picture 
-  - [ ] Add call-to-action buttons (e.g., Download Resume, Contact)
+### Step 0 — Setup
 
-### 5. Projects Section
-- [ ] Design a Projects grid/list component
-  - [ ] Create a card component for each project
-  - [ ] Add project images, descriptions, tech stack, and links
-  - [ ] Implement filtering or search
+- [X] Repository initialized.
+- [X] Dependencies set up (`npm install` / `pnpm install`).
+- [X] Development server configured (`npm run dev`).
+- [X] Base structure created: `src/app`, `src/components`, `public/images`.
 
-### 6. Resume Section
-- [ ] Build a Resume/Experience timeline or list
-  - [ ] Add education, work experience, and skills
-  - [ ] Include download link for your resume (PDF)
+### Step 1 — Layout & Core Components
 
-### 7. Contact Section
-- [ ] Create a Contact form component
-  - [ ] Add fields for name, email, and message
-  - [ ] Integrate with an email service or use a form handler
-  - [ ] Add social media links
+- [X] **Global Layout** (`src/app/layout.tsx`) with `<html>`, `<body>`, and global styles.
+- [ ] **Navbar** (`src/components/Navbar/Navbar.tsx`) with navigation links and mobile toggle.
+- [ ] **Footer** (`src/components/Footer/Footer.tsx`).
+- [ ] **Container/Main** wrapper to centralize content.
+- [ ] **ThemeToggle** (`src/components/ThemeToggle.tsx`) for dark/light mode.
 
-### 8. Extras & Personalization
-- [ ] Add a Certificates or Blog section
-- [ ] Implement testimonials or recommendations
-- [ ] Customize the color palette and typography 
+### Step 2 — Pages (App Router)
 
-### 9. Interactivity & Polish
-- [ ] Add subtle animations (e.g., Framer Motion)
-- [ ] Ensure all components are responsive and accessible
-- [ ] Polish UI with advanced Aceternity/Sidefolio components
+- [ ] **Home** (`src/app/page.tsx`) with Hero and main sections.
+- [ ] **About** (`src/app/about/page.tsx`).
+- [ ] **Projects (list)** (`src/app/projects/page.tsx`).
+- [ ] **Project (dynamic)** (`src/app/projects/[slug]/page.tsx`).
+- [ ] **Blog (list)** (`src/app/blog/page.tsx`).
+- [ ] **Blog Post (dynamic)** (`src/app/blog/[slug]/page.mdx` or `page.tsx`).
+- [ ] **Resume** (`src/app/resume/page.tsx`).
+- [ ] **Contact** (`src/app/contact/page.tsx`) with a simple form.
 
-### 10. SEO & Optimization
-- [ ] Add meta tags and Open Graph data
-- [ ] Optimize images and assets
-- [ ] Test performance (Lighthouse, etc.)
+### Step 3 — Page Components
 
-### 11. Deployment & Final Adjustments
-- [ ] Deploy site to Vercel
-- [ ] Test on multiple devices and browsers
-- [ ] Final review and update README
+- [ ] **Hero** section with headline, short description, and CTA.
+- [ ] **AboutSection** with text and photo.
+- [ ] **TechStack** with technology logos.
+- [ ] **ProjectCard** with thumbnail, title, summary, and tags.
+- [ ] **ProjectsGrid** (optional filter).
+- [ ] **BlogCard** for post previews.
+- [ ] **PostContent** for rendering MDX/HTML blog posts.
 
----
+### Step 4 — Content & Data
 
-## 📈 Progress
+- [ ] **TypeScript Types** (`src/types/*`) for Project, BlogPost, NavLink.
+- [ ] **Constants** (`src/constants/navlinks.tsx`, `socials.tsx`).
+- [ ] **Content folder** for blog posts and projects (`content/blog/{slug}.mdx`, `content/projects/{slug}.md`).
+- [ ] **Libs** (`src/lib/getAllBlogs.ts`, `getAllProjects.ts`, `formatDate.ts`).
 
-Each completed step will be marked as **done ✅** in this README to show ongoing progress.
+### Step 5 — Styling, Fonts & Responsiveness
+
+- [ ] **Tailwind** configuration (`tailwind.config.ts`) and global styles (`globals.css`).
+- [ ] **Fonts** in `public/fonts` configured via CSS or `next/font`.
+- [ ] **Responsive navigation** for mobile devices.
+- [ ] **Accessibility** improvements (ARIA attributes, semantic HTML, color contrast).
+
+### Step 6 — SEO, Metadata & Images
+
+- [ ] **SEO/Head Component** with meta tags, titles, and OG tags.
+- [ ] **Optimized Images** with `next/image` and assets in `public/images`.
+- [ ] **Sitemap / robots.txt** (optional).
+- [ ] **Open Graph images** for social sharing (optional).
+
+### Step 7 — Integrations & Deployment
+
+- [ ] **Contact Form backend** integrated with API/service (Email API, Netlify Forms, etc.).
+- [ ] **Analytics** via Google Analytics, Plausible, or similar.
+- [ ] **CI/CD pipeline** with Vercel or GitHub Actions.
+- [ ] **Deployment** with custom domain and environment variables.
+
+### Step 8 — Final Polish
+
+- [ ] Manual testing: links, images, mobile view, SEO basics.
+- [ ] ESLint & Prettier setup.
+- [ ] Update README with screenshots and deployment instructions.
+- [ ] First release: `v1.0`.
+
+### Optional Enhancements
+
+- [ ] Automatic dark-mode detection from system preferences.
+- [ ] Smooth animations and transitions.
+- [ ] Custom 404 page.
+- [ ] Internationalization (i18n).
 
 ---
 
 ## 📬 Contact
 
-For questions or suggestions about this portfolio, feel free to reach out:  
-**Email**: htonioni@outlook.com  
-**LinkedIn**: https://linkedin.com/in/htonioni
-
----
+For questions or suggestions about this project:
+📧 **Email**: htonioni@outlook.com
+🔗 **LinkedIn**: [linkedin.com/in/htonioni](https://linkedin.com/in/htonioni)
