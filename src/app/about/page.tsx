@@ -1,9 +1,6 @@
-import React from "react"
-
-
-const About: React.FC = () => {
+const About = () => {
     return (
-        <h1>Test about</h1>
+        <h1 className="bg-red-600">Test about</h1>
     )
 }
 
