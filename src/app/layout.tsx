@@ -3,8 +3,6 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 
-
-
 export const metadata: Metadata = {
   title: "Hugo Tonioni",
   description: "Welcome to my portfolio!",
@@ -24,8 +22,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.variable} antialiased`}>
+        <div className="flex min-h-screen">
           <Navbar />
-          {children}
+          <main className="flex-1 p-6 bg-white dark:bg-zinc-950">
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );
