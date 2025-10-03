@@ -49,7 +49,6 @@ To keep the process organized, each feature or milestone is developed in its **o
 - [X] **Global Layout** (`src/app/layout.tsx`) with `<html>`, `<body>`, and global styles.
 - [X] **Navbar** (`src/components/Navbar/Navbar.tsx`) with navigation links and mobile toggle.
 - [X] **Footer** (`src/components/Footer/Footer.tsx`).
-- [ ] **Container/Main** wrapper to centralize content.
 - [ ] **ThemeToggle** (`src/components/ThemeToggle.tsx`) for dark/light mode.
 
 ### Step 2 — Pages (App Router)
