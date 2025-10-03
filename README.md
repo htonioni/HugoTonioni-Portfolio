@@ -47,8 +47,8 @@ To keep the process organized, each feature or milestone is developed in its **o
 ### Step 1 — Layout & Core Components
 
 - [X] **Global Layout** (`src/app/layout.tsx`) with `<html>`, `<body>`, and global styles.
-- [ ] **Navbar** (`src/components/Navbar/Navbar.tsx`) with navigation links and mobile toggle. (⌛ IN PROGRESS)
-- [ ] **Footer** (`src/components/Footer/Footer.tsx`).
+- [X] **Navbar** (`src/components/Navbar/Navbar.tsx`) with navigation links and mobile toggle.
+- [X] **Footer** (`src/components/Footer/Footer.tsx`).
 - [ ] **Container/Main** wrapper to centralize content.
 - [ ] **ThemeToggle** (`src/components/ThemeToggle.tsx`) for dark/light mode.
 
@@ -57,9 +57,6 @@ To keep the process organized, each feature or milestone is developed in its **o
 - [ ] **Home** (`src/app/page.tsx`) with Hero and main sections.
 - [ ] **About** (`src/app/about/page.tsx`).
 - [ ] **Projects (list)** (`src/app/projects/page.tsx`).
-- [ ] **Project (dynamic)** (`src/app/projects/[slug]/page.tsx`).
-- [ ] **Blog (list)** (`src/app/blog/page.tsx`).
-- [ ] **Blog Post (dynamic)** (`src/app/blog/[slug]/page.mdx` or `page.tsx`).
 - [ ] **Resume** (`src/app/resume/page.tsx`).
 - [ ] **Contact** (`src/app/contact/page.tsx`) with a simple form.
 
