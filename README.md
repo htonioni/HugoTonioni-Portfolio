@@ -55,7 +55,7 @@ To keep the process organized, each feature or milestone is developed in its **o
 
 - [X] **Home** (`src/app/page.tsx`) with Hero and main sections.
 - [ ] **About** (`src/app/about/page.tsx`).
-- [ ] **Projects (list)** (`src/app/projects/page.tsx`).
+- [X] **Projects (list)** (`src/app/projects/page.tsx`).
 - [ ] **Resume** (`src/app/resume/page.tsx`).
 - [ ] **Contact** (`src/app/contact/page.tsx`) with a simple form.
 
