@@ -1,120 +1,118 @@
-# Personal Portfolio - Showcase
+# Personal Portfolio - Hugo Tonioni
 
-This repository contains the source code for my personal portfolio website, built with **Next.js (React + TypeScript)** and styled using **Tailwind CSS**.
-The goal of this project is to create a **professional and interactive platform** to highlight my work, present my resume, and provide simple ways to get in touch.
+A modern, responsive portfolio website built with **Next.js 15**, **React 19**, **TypeScript**, and **Tailwind CSS**.
+This project showcases my frontend development skills and serves as a professional platform to present my work and connect with potential collaborators.
 
 ---
 
 ## 🎯 Project Goals
 
-- Establish a strong digital presence.
-- Showcase projects in a clear and visually appealing way.
-- Make my resume easily accessible online.
-- Provide simple and intuitive contact options.
-- Demonstrate proficiency with modern tools (React, Next.js, Tailwind, UI Libraries).
+- Create a professional digital presence
+- Showcase frontend development skills and projects
+- Provide an accessible online resume and portfolio
+- Demonstrate proficiency with modern web technologies
+- Implement responsive design and accessibility best practices
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Next.js** → Framework for React applications, routing, and optimizations.
-- **React + TypeScript** → Development foundation.
-- **Tailwind CSS** → Utility-first CSS framework for fast and responsive styling.
-- **Aceternity UI** → Modern UI components for a polished interface.
-- **Vercel** → Deployment and hosting platform.
+- **Next.js 15** → React framework with App Router and server components
+- **React 19** → Latest React features and optimizations
+- **TypeScript** → Type safety and better developer experience
+- **Tailwind CSS** → Utility-first CSS framework for rapid UI development
+- **Aceternity UI** → Modern UI components with animations
+- **Framer Motion** → Smooth animations and interactions
+- **Vercel** → Deployment and hosting platform
 
 ---
 
-## 💻📈 Development Roadmap
+## 💻 Development Roadmap
 
-This portfolio is being built in **phases**, with progress tracked through checklists.
-To keep the process organized, each feature or milestone is developed in its **own branch**.
+This portfolio is built incrementally using feature branches for organized development.
+Each step represents a complete feature or major milestone.
 
-### 🔀 Build process
+### 🔀 Workflow
 
-- Every branch represents a step of the roadmap. focusing only on that specific milestone
-  Example: `feat/step-01-navbar`, `fix/step-02-about`.
-- Once completed, the branch is merged into `main`.
-- Progress is tracked in this README using checkboxes (`- [ ]` → `- [x]`).
+- Each step is developed in a dedicated branch: `feat/step-XX-feature-name`
+- Features are tested and merged into `main` when complete
+- Progress is tracked using checkboxes in this README
 
-### Step 0 — Setup
+---
 
-- [X] Repository initialized.
-- [X] Dependencies set up (`npm install` / `pnpm install`).
-- [X] Development server configured (`npm run dev`).
-- [X] Base structure created: `src/app`, `src/components`, `public/images`.
+## 📋 Development Steps
 
-### Step 1 — Layout & Core Components
+### Step 0 — Project Foundation ✅
 
-- [X] **Global Layout** (`src/app/layout.tsx`) with `<html>`, `<body>`, and global styles.
-- [X] **Navbar** (`src/components/Navbar/Navbar.tsx`) with navigation links and mobile toggle.
-- [X] **Footer** (`src/components/Footer/Footer.tsx`).
-- [X] **ThemeToggle** (`src/components/ThemeToggle.tsx`) for dark/light mode.
+- [X] **Repository Setup** → Initial Next.js project with TypeScript
+- [X] **Dependencies** → Tailwind CSS, React Icons, UI libraries
+- [X] **Development Environment** → ESLint, Prettier, Git workflow
+- [X] **Base Architecture** → Folder structure and component organization
 
-### Step 2 — Pages (App Router)
+### Step 1 — Core Layout & Navigation ✅
 
-- [X] **Home** (`src/app/page.tsx`) with Hero and main sections.
-- [ ] **About** (`src/app/about/page.tsx`).
-- [X] **Projects (list)** (`src/app/projects/page.tsx`).
-- [ ] **Resume** (`src/app/resume/page.tsx`).
-- [ ] **Contact** (`src/app/contact/page.tsx`) with a simple form.
+- [X] **Global Layout** → Root layout with theme support and responsive structure
+- [X] **Navigation System** → Sidebar navigation with mobile responsiveness
+- [X] **Footer Component** → Contact links and social media
+- [X] **Theme System** → Dark/light mode with localStorage persistence
+- [X] **Component Library** → Reusable UI components (Container, Heading, Paragraph, etc.)
 
-### Step 3 — Page Components
+### Step 2 — Home Page & Hero Section ✅
 
-- [ ] **Hero** section with headline, short description, and CTA.
-- [ ] **AboutSection** with text and photo.
-- [ ] **TechStack** with technology logos.
-- [ ] **ProjectCard** with thumbnail, title, summary, and tags.
-- [ ] **ProjectsGrid** (optional filter).
-- [ ] **BlogCard** for post previews.
-- [ ] **PostContent** for rendering MDX/HTML blog posts.
+- [X] **Hero Design** → Modern introduction with 3D card effects
+- [X] **Personal Branding** → Professional presentation and call-to-action
+- [X] **Responsive Layout** → Mobile-first design with grid system
+- [X] **Interactive Elements** → Hover effects and smooth transitions
+- [X] **Content Strategy** → Focus on key messaging and user experience
 
-### Step 4 — Content & Data
+### Step 3 — Content Pages 🚧
 
-- [ ] **TypeScript Types** (`src/types/*`) for Project, BlogPost, NavLink.
-- [ ] **Constants** (`src/constants/navlinks.tsx`, `socials.tsx`).
-- [ ] **Content folder** for blog posts and projects (`content/blog/{slug}.mdx`, `content/projects/{slug}.md`).
-- [ ] **Libs** (`src/lib/getAllBlogs.ts`, `getAllProjects.ts`, `formatDate.ts`).
+- [X] **About Page** → Comprehensive developer profile with skills and background
+- [X] **Projects Showcase** → Portfolio projects with detailed descriptions and tech stacks
+- [X] **Contact Page** → Professional contact methods and availability
+- [ ] **Resume Integration** → Online resume with download option
+- [ ] **Content Refinement** → Polish copy and ensure consistency
 
-### Step 5 — Styling, Fonts & Responsiveness
+### Step 4 — Visual Enhancement & Polish
 
-- [ ] **Tailwind** configuration (`tailwind.config.ts`) and global styles (`globals.css`).
-- [ ] **Fonts** in `public/fonts` configured via CSS or `next/font`.
-- [ ] **Responsive navigation** for mobile devices.
-- [ ] **Accessibility** improvements (ARIA attributes, semantic HTML, color contrast).
+- [ ] **Advanced Animations** → Page transitions and micro-interactions
+- [ ] **Image Optimization** → Professional photos and project screenshots
+- [ ] **Performance Optimization** → Loading times and Core Web Vitals
+- [ ] **Accessibility Audit** → WCAG compliance and screen reader support
 
-### Step 6 — SEO, Metadata & Images
+### Step 5 — Professional Features
 
-- [ ] **SEO/Head Component** with meta tags, titles, and OG tags.
-- [ ] **Optimized Images** with `next/image` and assets in `public/images`.
-- [ ] **Sitemap / robots.txt** (optional).
-- [ ] **Open Graph images** for social sharing (optional).
+- [ ] **Contact Form** → Functional contact form with email integration
+- [ ] **Project Details** → Individual project pages with case studies
+- [ ] **Resume PDF** → Downloadable resume with dynamic generation
+- [ ] **Social Proof** → Testimonials or recommendations section
 
-### Step 7 — Integrations & Deployment
+### Step 6 — SEO & Deployment
 
-- [ ] **Contact Form backend** integrated with API/service (Email API, Netlify Forms, etc.).
-- [ ] **Analytics** via Google Analytics, Plausible, or similar.
-- [ ] **CI/CD pipeline** with Vercel or GitHub Actions.
-- [ ] **Deployment** with custom domain and environment variables.
+- [ ] **SEO Optimization** → Meta tags, structured data, and Open Graph
+- [ ] **Analytics Integration** → Google Analytics or privacy-focused alternative
+- [ ] **Performance Monitoring** → Lighthouse scores and real user metrics
+- [ ] **Custom Domain** → Professional domain setup and SSL
 
-### Step 8 — Final Polish
+### Step 7 — Advanced Features
 
-- [ ] Manual testing: links, images, mobile view, SEO basics.
-- [ ] ESLint & Prettier setup.
-- [ ] Update README with screenshots and deployment instructions.
-- [ ] First release: `v1.0`.
+- [ ] **Dynamic Content** → CMS integration for easy content updates
+- [ ] **Internationalization** → Multi-language support if needed
+- [ ] **Progressive Web App** → PWA features for mobile experience
+- [ ] **Admin Dashboard** → Content management interface
 
-### Optional Enhancements
+### Step 8 — Launch & Optimization
 
-- [ ] Automatic dark-mode detection from system preferences.
-- [ ] Smooth animations and transitions.
-- [ ] Custom 404 page.
-- [ ] Internationalization (i18n).
+- [ ] **Cross-browser Testing** → Compatibility across different browsers
+- [ ] **Performance Audit** → Final optimization and speed improvements
+- [ ] **Security Review** → Security headers and best practices
+- [ ] **Production Release** → Official launch and announcement
 
 ---
 
 ## 📬 Contact
 
-For questions or suggestions about this project:
-📧 **Email**: htonioni@outlook.com
-🔗 **LinkedIn**: [linkedin.com/in/htonioni](https://linkedin.com/in/htonioni)
+**Hugo Tonioni** - Frontend Developer  
+📧 **Email**: hugotonioni@example.com  
+🔗 **LinkedIn**: [linkedin.com/in/htonioni](https://linkedin.com/in/htonioni)  
+💻 **GitHub**: [github.com/htonioni](https://github.com/htonioni)
