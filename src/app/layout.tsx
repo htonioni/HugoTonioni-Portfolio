@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import { Navbar, Footer, BackToTop, ThemeProvider } from "@/components";
+import { Navbar, BackToTop, ThemeProvider, ConditionalFooter } from "@/components";
 
 export const metadata: Metadata = {
   title: "Hugo Tonioni",
@@ -20,16 +20,40 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="">
-      <body className={`${montserrat.variable} antialiased bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300 min-h-screen`}>
+    <html lang="en" className="" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  const theme = localStorage.getItem('theme') || 'light';
+                  const resolved = theme === 'system' 
+                    ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+                    : theme;
+                  document.documentElement.classList.remove('light', 'dark');
+                  document.documentElement.classList.add(resolved);
+                } catch (e) {
+                  document.documentElement.classList.add('light');
+                }
+              })();
+            `,
+          }}
+        />
+      </head>
+      <body className={`${montserrat.variable} antialiased h-screen overflow-hidden bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-colors duration-300`}>
         <ThemeProvider>
-          <div className="flex min-h-screen bg-white dark:bg-gray-900">
+          <div className="flex h-screen bg-gray-100 dark:bg-gray-800">
             <Navbar />
-            <div className="flex-1 flex flex-col ml-0 md:ml-0 pt-16 md:pt-6 bg-white dark:bg-gray-900">
-              <main className="flex-1 p-4 md:p-6 lg:p-8 bg-white dark:bg-gray-900">
-                {children}
-              </main>
-              <Footer />
+            {/* Wrapper com padding que cria o efeito visual */}
+            <div className="flex-1 lg:pl-2 lg:pt-2 bg-gray-100 dark:bg-gray-800 overflow-y-auto">
+              {/* Container principal com borda e radius */}
+              <div className="flex-1 bg-white dark:bg-gray-900 min-h-screen lg:rounded-tl-xl border border-transparent lg:border-gray-200 dark:lg:border-gray-700 overflow-y-auto">
+                <main className="flex-1 p-4 md:p-6 lg:p-8">
+                  {children}
+                </main>
+                <ConditionalFooter />
+              </div>
             </div>
           </div>
           <BackToTop />
