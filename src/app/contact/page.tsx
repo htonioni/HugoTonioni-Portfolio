@@ -113,7 +113,7 @@ const Contact = () => {
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
               <h4 className="font-semibold text-lg mb-3 text-orange-600 dark:text-orange-400 flex items-center gap-2">
                 <FaRocket />
-                Frontend Projects
+                Web Projects
               </h4>
               <ul className="space-y-2 text-gray-600 dark:text-gray-300">
                 <li>• React/Next.js applications</li>
