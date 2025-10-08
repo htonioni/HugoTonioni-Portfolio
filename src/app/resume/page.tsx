@@ -1,6 +1,6 @@
 import { Container, Heading, Paragraph, Highlight } from "@/components";
 import { Timeline } from "@/components/Timeline";
-import { FaDownload, FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { FaDownload, FaLinkedin, FaGithub, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const Resume = () => {
   // Real professional experience and education
