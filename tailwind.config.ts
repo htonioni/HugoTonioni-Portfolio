@@ -8,6 +8,9 @@ module.exports = {
   darkMode: "class",
   theme: {
   	extend: {
+  		screens: {
+  			'desktop': '1920px', // Custom breakpoint for large desktops
+  		},
   		fontFamily: {
   			montserrat: [
   				'var(--font-montserrat)',

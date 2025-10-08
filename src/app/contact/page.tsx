@@ -1,90 +1,71 @@
 import { Container, Heading, Paragraph, Highlight } from "@/components";
+import { FaLinkedin, FaGithub, FaEnvelope, FaMapMarkerAlt, FaClock, FaBriefcase, FaRocket, FaGraduationCap, FaComments, FaStar } from "react-icons/fa";
+import { GoLink } from "react-icons/go"
 
 const Contact = () => {
   const contactMethods = [
     {
-      title: "Email",
-      description: "Best for project inquiries and detailed discussions",
-      value: "hugotonioni@example.com",
-      href: "mailto:hugotonioni@example.com",
-      icon: "📧",
-      primary: true
+      title: "E-mail",
+      description: "Easiest way to reach me",
+      value: "htonioni@outlook.com",
+      href: "mailto:htonioni@outlook.com",
+      icon: <FaEnvelope className="text-2xl text-gray-600 dark:text-gray-300" />
     },
     {
       title: "LinkedIn",
       description: "Let's connect professionally",
-      value: "@hugotonioni",
-      href: "https://linkedin.com/in/hugotonioni",
-      icon: "💼"
+      value: "@Hugo Tonioni",
+      href: "https://linkedin.com/in/htonioni",
+      icon: <FaLinkedin className="text-2xl text-blue-600" />
     },
     {
       title: "GitHub",
-      description: "Check out my code and projects",
-      value: "@hugotonioni",
-      href: "https://github.com/hugotonioni",
-      icon: "💻"
+      description: "Check out my projects",
+      value: "@htonioni",
+      href: "https://github.com/htonioni",
+      icon: <FaGithub className="text-2xl text-gray-800 dark:text-gray-200" />
     },
-    {
-      title: "Phone",
-      description: "For quick conversations",
-      value: "+55 (11) 99999-9999",
-      href: "tel:+5511999999999",
-      icon: "📱"
-    }
   ];
 
   const timeZone = {
     location: "São Paulo, Brazil",
     timezone: "UTC-3",
-    workingHours: "9:00 AM - 6:00 PM (BRT)"
+    workingHours: "8:00 AM - 6:00 PM (BRT)"
   };
 
   return (
     <Container className="py-8">
-      <div className="max-w-4xl">
+      <div className="max-w-5xl">
         <Heading className="text-4xl md:text-5xl font-bold mb-6">
           Let's <Highlight variant="primary">Connect</Highlight>
         </Heading>
-        
+
         <Paragraph className="text-xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl">
-          I'm always excited to discuss new opportunities, collaborate on interesting projects, 
+          I'm always excited to discuss new opportunities, collaborate on interesting projects,
           or simply chat about technology and development. Feel free to reach out!
         </Paragraph>
 
         {/* Contact Methods */}
-        <div className="grid md:grid-cols-2 gap-6 mb-12">
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
           {contactMethods.map((method, index) => (
             <a
               key={index}
               href={method.href}
-              className={`group block p-6 rounded-xl border transition-all duration-300 hover:shadow-lg ${
-                method.primary 
-                  ? 'bg-blue-50 border-blue-200 hover:bg-blue-100 dark:bg-blue-900/20 dark:border-blue-800 dark:hover:bg-blue-900/30'
-                  : 'bg-white border-gray-200 hover:bg-gray-50 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'
-              }`}
+              className="group block p-6 rounded-xl border transition-all duration-300 hover:shadow-lg bg-white border-gray-200 hover:bg-gray-50 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
             >
               <div className="flex items-start space-x-4">
-                <div className="text-2xl">{method.icon}</div>
+                <div className="flex items-center justify-center">{method.icon}</div>
                 <div className="flex-1">
-                  <h3 className={`font-semibold text-lg mb-2 ${
-                    method.primary 
-                      ? 'text-blue-900 dark:text-blue-100' 
-                      : 'text-gray-900 dark:text-gray-100'
-                  }`}>
-                    {method.title}
-                  </h3>
-                  <p className={`text-sm mb-2 ${
-                    method.primary 
-                      ? 'text-blue-700 dark:text-blue-300' 
-                      : 'text-gray-600 dark:text-gray-300'
-                  }`}>
+                  <div className="flex items-center gap-2 mb-2">
+                    <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-100">
+                      {method.title}
+                    </h3>
+                    <GoLink className="text-xl text-gray-800 dark:text-gray-200" />
+                  </div>
+                  <p className="text-sm mb-2 text-gray-600 dark:text-gray-300">
                     {method.description}
                   </p>
-                  <p className={`font-medium ${
-                    method.primary 
-                      ? 'text-blue-800 dark:text-blue-200' 
-                      : 'text-gray-800 dark:text-gray-200'
-                  } group-hover:underline`}>
+                  <p className="font-medium text-gray-800 dark:text-gray-200 group-hover:underline">
                     {method.value}
                   </p>
                 </div>
@@ -101,21 +82,21 @@ const Contact = () => {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
               <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-3">
-                📍
+                <FaMapMarkerAlt />
               </div>
               <h4 className="font-semibold mb-2 text-gray-900 dark:text-gray-100">Location</h4>
               <p className="text-gray-600 dark:text-gray-300">{timeZone.location}</p>
             </div>
             <div className="text-center">
               <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-3">
-                🕒
+                <FaClock />
               </div>
               <h4 className="font-semibold mb-2 text-gray-900 dark:text-gray-100">Timezone</h4>
               <p className="text-gray-600 dark:text-gray-300">{timeZone.timezone}</p>
             </div>
             <div className="text-center">
               <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-3">
-                💼
+                <FaBriefcase />
               </div>
               <h4 className="font-semibold mb-2 text-gray-900 dark:text-gray-100">Working Hours</h4>
               <p className="text-gray-600 dark:text-gray-300">{timeZone.workingHours}</p>
@@ -130,8 +111,9 @@ const Contact = () => {
           </Heading>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
-              <h4 className="font-semibold text-lg mb-3 text-orange-600 dark:text-orange-400">
-                🚀 Frontend Projects
+              <h4 className="font-semibold text-lg mb-3 text-orange-600 dark:text-orange-400 flex items-center gap-2">
+                <FaRocket />
+                Frontend Projects
               </h4>
               <ul className="space-y-2 text-gray-600 dark:text-gray-300">
                 <li>• React/Next.js applications</li>
@@ -140,10 +122,11 @@ const Contact = () => {
                 <li>• Performance optimization</li>
               </ul>
             </div>
-            
+
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
-              <h4 className="font-semibold text-lg mb-3 text-blue-600 dark:text-blue-400">
-                🎓 Learning Opportunities
+              <h4 className="font-semibold text-lg mb-3 text-blue-600 dark:text-blue-400 flex items-center gap-2">
+                <FaGraduationCap />
+                Learning Opportunities
               </h4>
               <ul className="space-y-2 text-gray-600 dark:text-gray-300">
                 <li>• Junior developer roles</li>
@@ -161,29 +144,35 @@ const Contact = () => {
             Ready to Start Something Great?
           </Heading>
           <Paragraph className="text-lg mb-6 max-w-2xl mx-auto">
-            Whether you have a project idea, want to collaborate, or just want to say hello, 
+            Whether you have a project idea, want to collaborate, or just want to say hello,
             I'd love to hear from you. Let's build something amazing together!
           </Paragraph>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:hugotonioni@example.com"
-              className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200"
+              href="mailto:htonioni@outlook.com"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200"
             >
-              📧 Send Email
+              <FaEnvelope className="text-lg" />
+              Send Email
             </a>
             <a
-              href="https://linkedin.com/in/hugotonioni"
-              className="inline-flex items-center justify-center px-6 py-3 bg-gray-800 hover:bg-gray-900 dark:bg-gray-600 dark:hover:bg-gray-500 text-white font-medium rounded-lg transition-colors duration-200"
+              href="https://linkedin.com/in/htonioni"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-900 dark:bg-gray-600 dark:hover:bg-gray-500 text-white font-medium rounded-lg transition-colors duration-200"
             >
-              💼 Connect on LinkedIn
+              <FaLinkedin className="text-lg" />
+              Connect on LinkedIn
             </a>
           </div>
         </div>
 
         {/* Response Time */}
         <div className="mt-8 text-center">
-          <Paragraph className="text-sm text-gray-500 dark:text-gray-400">
-            💬 I typically respond within 24 hours • 🌟 Available for projects starting January 2024
+          <Paragraph className="text-sm text-gray-500 dark:text-gray-400 flex items-center justify-center gap-2">
+            <FaComments className="text-blue-500" />
+            I typically respond within 24 hours
+            <span className="mx-2">•</span>
+            <FaStar className="text-yellow-500" />
+            Always excited for new challenges
           </Paragraph>
         </div>
       </div>

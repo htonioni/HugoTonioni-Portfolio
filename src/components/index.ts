@@ -14,3 +14,4 @@ export { Heading } from "./Heading";
 export { Paragraph } from "./Paragraph";
 export { Highlight } from "./Highlight";
 export { ClientOnly } from "./ClientOnly";
+export { Timeline } from "./Timeline";
