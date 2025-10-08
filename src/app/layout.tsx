@@ -6,11 +6,11 @@ import { Navbar, BackToTop, ThemeProvider, ConditionalFooter } from "@/component
 export const metadata: Metadata = {
   metadataBase: new URL('https://hugotonionidev.vercel.app'),
   title: {
-    default: "Hugo Tonioni - Front-end Developer",
+    default: "Hugo Tonioni - Full-stack Developer",
     template: "%s | Hugo Tonioni"
   },
-  description: "Experienced Front-end Developer and Salesforce Specialist with 2+ years at Embraer. Expert in React, Next.js, TypeScript, Lightning Web Components, and enterprise solutions.",
-  keywords: ["Hugo Tonioni", "Front-end Developer", "Salesforce Developer", "React", "Next.js", "TypeScript", "Embraer", "Lightning Web Components", "Frontend Developer"],
+  description: "Experienced Full-stack Developer and Salesforce Specialist with 2+ years at Embraer. Expert in React, Next.js, TypeScript, Lightning Web Components, and enterprise solutions.",
+  keywords: ["Hugo Tonioni", "Front-end Developer", "Salesforce Developer", "React", "Next.js", "TypeScript", "Embraer", "Lightning Web Components", "Full-Stack Developer"],
   authors: [{ name: "Hugo Tonioni" }],
   creator: "Hugo Tonioni",
   publisher: "Hugo Tonioni",
@@ -19,20 +19,20 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://hugotonionidev.vercel.app",
     siteName: "Hugo Tonioni Portfolio",
-    title: "Hugo Tonioni - Front-end Developer",
+    title: "Hugo Tonioni - Full-Stack Developer",
     description: "Experienced developer with proven results at Embraer. Specializing in modern web technologies and Salesforce platform development.",
     images: [
       {
         url: "/images/profile-pic.png",
         width: 1200,
         height: 630,
-        alt: "Hugo Tonioni - Front-end Developer",
+        alt: "Hugo Tonioni - Full-Stack Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hugo Tonioni - Front-end Developer",
+    title: "Hugo Tonioni - Full-Stack Developer",
     description: "Experienced developer with proven results at Embraer. Specializing in modern web technologies and Salesforce platform development.",
     images: ["/images/profile-pic.png"],
   },

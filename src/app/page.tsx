@@ -16,14 +16,14 @@ export default function Home() {
                 Hi, I'm <Highlight variant="primary">Hugo</Highlight>
               </Heading>
               <Heading as="h2" className="text-lg sm:text-xl md:text-2xl lg:text-xl xl:text-2xl desktop:text-3xl text-gray-600 dark:text-gray-300 font-normal">
-                Frontend Developer
+                Full-stack Developer
               </Heading>
             </div>
 
             <Paragraph className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl desktop:text-2xl leading-relaxed text-gray-600 dark:text-gray-300 max-w-2xl mx-auto lg:mx-0">
-              I'm a passionate frontend developer and Software Engineering student, 
-              building modern web applications with <Highlight>React, Next.js, and TypeScript</Highlight>. 
-              Currently expanding into full-stack development.
+              I'm a passionate full-stack developer and Information Technology student, 
+              building modern web applications with <Highlight>React, Next.js, TypeScript and Node</Highlight>. 
+              Currently, I'm focusing on deepening my backend skills and growing as a full-stack developer.
             </Paragraph>
 
             {/* CTA Buttons */}
@@ -55,7 +55,7 @@ export default function Home() {
                     <div className="w-full h-full rounded-lg overflow-hidden bg-white dark:bg-gray-900">
                       <Image
                         src="/images/home_profile.JPEG"
-                        alt="Hugo Tonioni - Frontend Developer"
+                        alt="Hugo Tonioni - Full-stack Developer"
                         fill
                         className="object-cover"
                         priority

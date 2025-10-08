@@ -11,20 +11,19 @@ const About = () => {
         </Heading>
         
         <Heading as="h2" className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
-          Frontend Developer & Software Engineering Student
+          Full-Stack Developer & Software Engineering Student
         </Heading>
 
         <div className="space-y-6 text-lg leading-relaxed">
           <Paragraph>
-            I'm a <Highlight variant="secondary">Front-end Developer</Highlight> with 2+ years of experience in front-end and Salesforce development, 
-            currently working as an <Highlight>IT Intern at Embraer</Highlight> in São José dos Campos. My expertise spans from modern web applications 
-            to enterprise Salesforce solutions that drive business automation and efficiency.
+            I'm a <Highlight variant="secondary">Full-Stack Developer</Highlight> with 2+ years of comprehensive experience 
+            building end-to-end web applications and enterprise solutions. Currently working as an <Highlight>IT Intern at Embraer</Highlight> in São José dos Campos, My expertise spans from modern web applications to enterprise Salesforce solutions that drive business automation and efficiency.
           </Paragraph>
 
           <Paragraph>
-            At Embraer, I focus on <Highlight variant="accent">automating processes and creating web solutions</Highlight> using 
-            JavaScript, TypeScript, Node.js, Nest.js, and Salesforce technologies like Lightning Web Components (LWC) and Apex. 
-            I've successfully developed solutions that capture hundreds of leads and streamline business operations.
+            At Embraer, I've delivered complete automation solutions that streamline business processes and capture 
+            hundreds of leads through integrated web applications.
+            At Embraer, I focus on automating processes and creating web solutions using JavaScript, TypeScript, Node.js, Nest.js, and Salesforce technologies like Lightning Web Components (LWC) and Apex. I've successfully developed solutions that <Highlight variant="accent">capture hundreds of leads</Highlight> and streamline business operations.
           </Paragraph>
 
           <Paragraph>
@@ -63,7 +62,7 @@ const About = () => {
           </div>
         </div>
 
-        {/* Tech Stack */}
+        {/* Full-Stack Tech Stack */}
         <div className="mt-12">
           <Heading as="h3" className="text-2xl font-semibold mb-6">
             Tech Stack & Skills
@@ -88,7 +87,8 @@ const About = () => {
               <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-3 text-lg">Backend & Databases</h4>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 {[
-                  "Node.js", "Nest.js", "Python", "MySQL", "REST APIs", "PostgreSQL"
+                  "Node.js", "Nest.js", "Python", "MySQL", 
+                  "REST APIs", "PostgreSQL", "Database Design", "Server Architecture"
                 ].map((tech) => (
                   <div key={tech} className="bg-blue-50 dark:bg-blue-900/20 p-3 rounded-lg text-center border border-blue-200 dark:border-blue-800">
                     <span className="font-medium text-blue-800 dark:text-blue-200">{tech}</span>
@@ -112,7 +112,7 @@ const About = () => {
             </div>
 
             <div>
-              <h4 className="font-semibold text-purple-600 dark:text-purple-400 mb-3 text-lg">Tools & DevOps</h4>
+              <h4 className="font-semibold text-purple-600 dark:text-purple-400 mb-3 text-lg">DevOps & Tools</h4>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 {[
                   "Git", "GitHub", "Bitbucket", "Jira", 
@@ -170,22 +170,23 @@ const About = () => {
           </Heading>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20 p-6 rounded-lg border border-orange-200 dark:border-orange-800">
-              <h4 className="font-semibold text-orange-800 dark:text-orange-200 mb-3">🎯 Backend Mastery</h4>
+              <h4 className="font-semibold text-orange-800 dark:text-orange-200 mb-3">🎯 Backend Architecture</h4>
               <ul className="space-y-2 text-orange-700 dark:text-orange-300">
-                <li>• Advanced Node.js patterns</li>
+                <li>• Node.js patterns</li>
+                <li>• Microservices architecture</li>
                 <li>• Database design & optimization</li>
-                <li>• API development & security</li>
-                <li>• Server deployment & DevOps</li>
+                <li>• API security & authentication</li>
+                <li>• Cloud deployment strategies</li>
               </ul>
             </div>
             
             <div className="bg-gradient-to-br from-teal-50 to-green-50 dark:from-teal-900/20 dark:to-green-900/20 p-6 rounded-lg border border-teal-200 dark:border-teal-800">
-              <h4 className="font-semibold text-teal-800 dark:text-teal-200 mb-3">🚀 Advanced Frontend</h4>
+              <h4 className="font-semibold text-teal-800 dark:text-teal-200 mb-3">🚀 Modern Full-Stack Patterns</h4>
               <ul className="space-y-2 text-teal-700 dark:text-teal-300">
-                <li>• Advanced React patterns</li>
-                <li>• Performance optimization</li>
-                <li>• Testing strategies</li>
-                <li>• Animation & micro-interactions</li>
+                <li>• Advanced React patterns & state management</li>
+                <li>• Full-stack testing strategies</li>
+                <li>• Performance optimization across the stack</li>
+                <li>• Modern deployment & CI/CD pipelines</li>
               </ul>
             </div>
           </div>
