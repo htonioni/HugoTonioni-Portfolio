@@ -9,13 +9,11 @@ import {
     IoMdFolder,
     IoMdMail,
     IoMdMenu,
-    IoMdClose,
-    IoMdDocument
+    IoMdClose
 } from "react-icons/io";
 import {
     FaLinkedin,
-    FaGithub,
-    FaInstagram
+    FaGithub
 } from "react-icons/fa";
 import { SimpleThemeToggle } from "./ThemeToggle";
 

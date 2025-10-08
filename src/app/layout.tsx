@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar, BackToTop, ThemeProvider, ConditionalFooter } from "@/components";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://hugotonionidev.vercel.app'),
   title: {
     default: "Hugo Tonioni - Full-Stack Developer & Salesforce Specialist",
     template: "%s | Hugo Tonioni"
