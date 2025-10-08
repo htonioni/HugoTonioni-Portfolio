@@ -65,8 +65,8 @@ Each step represents a complete feature or major milestone.
 - [X] **Responsive Layout** → Mobile-first design with grid system
 - [X] **Contact Page** → Professional contact methods and availability
 - [X] **Interactive Elements** → Hover effects and smooth transitions
-- [ ] **Resume Integration** → Online resume with download option
-- [ ] **Content Refinement** → Polish copy and ensure consistency
+- [X] **Content Refinement** → Polish copy and ensure consistency
+- [X] **Resume Integration** → Online resume with download option
 
 ### Step 3 — Visual Enhancement & Polish
 
@@ -108,6 +108,6 @@ Each step represents a complete feature or major milestone.
 ## 📬 Contact
 
 **Hugo Tonioni** - Frontend Developer  
-📧 **Email**: hugotonioni@example.com  
+📧 **Email**: htonioni@outlook.com  
 🔗 **LinkedIn**: [linkedin.com/in/htonioni](https://linkedin.com/in/htonioni)  
 💻 **GitHub**: [github.com/htonioni](https://github.com/htonioni)

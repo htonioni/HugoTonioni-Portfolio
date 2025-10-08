@@ -1,9 +1,11 @@
 import { Container, Heading, Paragraph, Highlight } from "@/components";
+import { FaDownload } from "react-icons/fa";
 
 const About = () => {
   return (
-    <Container className="py-8">
-      <div className="max-w-4xl">
+    <>
+      <Container className="py-8">
+        <div className="max-w-4xl">
         <Heading className="text-4xl md:text-5xl font-bold mb-6">
           About <Highlight variant="primary">Hugo Tonioni</Highlight>
         </Heading>
@@ -14,22 +16,21 @@ const About = () => {
 
         <div className="space-y-6 text-lg leading-relaxed">
           <Paragraph>
-            I'm a passionate <Highlight variant="secondary">Frontend Developer</Highlight> currently pursuing 
-            Software Engineering, dedicated to creating exceptional digital experiences. My journey in tech 
-            started with curiosity and has evolved into a focused career path toward becoming a 
-            <Highlight>Full-Stack Developer</Highlight>.
+            I'm a <Highlight variant="secondary">Front-end Developer</Highlight> with 2+ years of experience in front-end and Salesforce development, 
+            currently working as an <Highlight>IT Intern at Embraer</Highlight> in São José dos Campos. My expertise spans from modern web applications 
+            to enterprise Salesforce solutions that drive business automation and efficiency.
           </Paragraph>
 
           <Paragraph>
-            I specialize in building modern, responsive web applications using <Highlight variant="accent">React, 
-            Next.js, and TypeScript</Highlight>. My approach combines clean, maintainable code with 
-            user-centered design principles to deliver solutions that not only look great but perform exceptionally.
+            At Embraer, I focus on <Highlight variant="accent">automating processes and creating web solutions</Highlight> using 
+            JavaScript, TypeScript, Node.js, Nest.js, and Salesforce technologies like Lightning Web Components (LWC) and Apex. 
+            I've successfully developed solutions that capture hundreds of leads and streamline business operations.
           </Paragraph>
 
           <Paragraph>
-            Currently expanding my skills in <Highlight>backend technologies</Highlight> including Node.js, 
-            MongoDB, and cloud platforms. I believe in continuous learning and staying current with 
-            the latest industry trends and best practices.
+            My technical foundation includes <Highlight>front-end development</Highlight> with React, TypeScript, and modern CSS frameworks, 
+            combined with <Highlight>back-end expertise</Highlight> in Node.js and Nest.js. On the Salesforce side, I create and maintain 
+            objects, automation flows, dashboards, reports, and custom applications using Apex and LWC.
           </Paragraph>
 
           <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg border-l-4 border-blue-500">
@@ -40,14 +41,19 @@ const About = () => {
           </div>
         </div>
 
-        {/* Education & Background */}
+        {/* International Experience */}
         <div className="mt-12">
           <Heading as="h3" className="text-2xl font-semibold mb-6">
-            Education & Background
+            International Experience & Education
           </Heading>
-          <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
+          <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg space-y-4">
+            <Paragraph>
+              <strong>🇺🇸 Cultural Exchange Program</strong> - Completed a one-year program in Sarasota, Florida (2018-2019), 
+              focusing on language improvement and cultural immersion. During this time, I volunteered on automation projects 
+              and managed inventory systems using Excel and Zendesk.
+            </Paragraph>
             <Paragraph className="mb-4">
-              <strong>Software Engineering Student</strong> - Currently pursuing my degree 
+              <strong>🎓 Bachelor of Information Technology</strong> - Estácio de Sá (Expected graduation: 12/2027) 
               with focus on modern software development practices, algorithms, and system design.
             </Paragraph>
             <Paragraph>
@@ -65,11 +71,11 @@ const About = () => {
           
           <div className="space-y-6">
             <div>
-              <h4 className="font-semibold text-green-600 dark:text-green-400 mb-3 text-lg">Frontend (Confident)</h4>
+              <h4 className="font-semibold text-green-600 dark:text-green-400 mb-3 text-lg">Frontend Development</h4>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 {[
-                  "React", "Next.js", "TypeScript", "JavaScript",
-                  "Tailwind CSS", "HTML5", "CSS3", "Responsive Design"
+                  "JavaScript", "React", "TypeScript", "HTML5",
+                  "CSS3", "Next.js", "Tailwind CSS", "Responsive Design"
                 ].map((tech) => (
                   <div key={tech} className="bg-green-50 dark:bg-green-900/20 p-3 rounded-lg text-center border border-green-200 dark:border-green-800">
                     <span className="font-medium text-green-800 dark:text-green-200">{tech}</span>
@@ -79,10 +85,10 @@ const About = () => {
             </div>
             
             <div>
-              <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-3 text-lg">Backend (Learning)</h4>
+              <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-3 text-lg">Backend & Databases</h4>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 {[
-                  "Node.js", "MongoDB", "Express.js", "REST APIs"
+                  "Node.js", "Nest.js", "Python", "MySQL", "REST APIs", "PostgreSQL"
                 ].map((tech) => (
                   <div key={tech} className="bg-blue-50 dark:bg-blue-900/20 p-3 rounded-lg text-center border border-blue-200 dark:border-blue-800">
                     <span className="font-medium text-blue-800 dark:text-blue-200">{tech}</span>
@@ -92,10 +98,25 @@ const About = () => {
             </div>
 
             <div>
-              <h4 className="font-semibold text-purple-600 dark:text-purple-400 mb-3 text-lg">Tools & Workflow</h4>
+              <h4 className="font-semibold text-orange-600 dark:text-orange-400 mb-3 text-lg">Salesforce Platform</h4>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 {[
-                  "Git & GitHub", "VS Code", "Figma", "npm/yarn"
+                  "LWC", "Apex", "Visualforce Pages", "SLDS",
+                  "Experience Cloud", "Salesforce Admin", "CRM Analytics", "Automation Flows"
+                ].map((tech) => (
+                  <div key={tech} className="bg-orange-50 dark:bg-orange-900/20 p-3 rounded-lg text-center border border-orange-200 dark:border-orange-800">
+                    <span className="font-medium text-orange-800 dark:text-orange-200">{tech}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-purple-600 dark:text-purple-400 mb-3 text-lg">Tools & DevOps</h4>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                {[
+                  "Git", "GitHub", "Bitbucket", "Jira", 
+                  "Confluence", "Azure DevOps", "DBeaver", "Zendesk"
                 ].map((tech) => (
                   <div key={tech} className="bg-purple-50 dark:bg-purple-900/20 p-3 rounded-lg text-center border border-purple-200 dark:border-purple-800">
                     <span className="font-medium text-purple-800 dark:text-purple-200">{tech}</span>
@@ -103,10 +124,46 @@ const About = () => {
                 ))}
               </div>
             </div>
+
+            <div>
+              <h4 className="font-semibold text-pink-600 dark:text-pink-400 mb-3 text-lg">Languages</h4>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                {[
+                  "Portuguese (Native)", "English (Fluent)", "Spanish (Basic)"
+                ].map((lang) => (
+                  <div key={lang} className="bg-pink-50 dark:bg-pink-900/20 p-3 rounded-lg text-center border border-pink-200 dark:border-pink-800">
+                    <span className="font-medium text-pink-800 dark:text-pink-200">{lang}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Learning Goals */}
+        {/* Professional Experience */}
+        <div className="mt-12">
+          <Heading as="h3" className="text-2xl font-semibold mb-6">
+            Professional Highlights
+          </Heading>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg border border-blue-200 dark:border-blue-800">
+              <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-3">🏢 Embraer (2024 - Present)</h4>
+              <Paragraph className="text-blue-700 dark:text-blue-300">
+                IT Intern focusing on process automation and web solutions. Developed gamified lead capture tools, 
+                Salesforce automation flows, and enterprise applications.
+              </Paragraph>
+            </div>
+            <div className="bg-green-50 dark:bg-green-900/20 p-6 rounded-lg border border-green-200 dark:border-green-800">
+              <h4 className="font-semibold text-green-800 dark:text-green-200 mb-3">✈️ Dubai National Air Travel (2020-2021)</h4>
+              <Paragraph className="text-green-700 dark:text-green-300">
+                Check-in Agent Assistance for international passengers, developing communication skills 
+                and working under pressure in dynamic environments.
+              </Paragraph>
+            </div>
+          </div>
+        </div>
+
+        {/* Current Learning Focus */}
         <div className="mt-12">
           <Heading as="h3" className="text-2xl font-semibold mb-6">
             Current Learning Focus
@@ -152,6 +209,30 @@ const About = () => {
         </div>
       </div>
     </Container>
+
+    {/* Floating Resume Download Button */}
+    <div className="fixed bottom-7 right-12 z-50">
+      <a
+        href="/resume/HugoTonioni-resume.pdf"
+        download="Hugo_Tonioni_Resume.pdf"
+        className="group relative overflow-hidden bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-float flex items-center gap-3 min-w-max"
+        title="Download Resume"
+      >
+        {/* Background Animation */}
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+        
+        {/* Icon and Text */}
+        <div className="relative z-10 flex items-center gap-3">
+          <FaDownload className="text-lg group-hover:animate-bounce" />
+          <span className="font-semibold text-sm hidden sm:block">Download CV</span>
+          <span className="font-semibold text-sm sm:hidden">CV</span>
+        </div>
+        
+        {/* Ripple Effect */}
+        <div className="absolute inset-0 rounded-2xl bg-white opacity-0 group-hover:opacity-10 group-hover:animate-ping"></div>
+      </a>
+    </div>
+  </>
   );
 }
 
